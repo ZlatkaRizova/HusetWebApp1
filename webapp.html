@@ -1,77 +1,86 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"> <!-- Charset  -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Huset Web App</title>
-		<link rel="stylesheet" href="webapp.css">
-    
-    <title>Huset Web App</title>
-    
-    <style></style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesletter | Movie & Performance Art</title>
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
-<header id="header">
-<div class="mui-appbar mui--appbar-line-height">
-<div class="mui-container-fluid">
-    <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sn-inline-block js-show-sidedrawer">-</a>
-    <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sn js-hide-sidedrawer">-</a>
-    <span class="mui--text-title mui-visible-xs=inline-block">Newsletter</span>
-</div>
-</div>
-</header>
-   
-<div id="content-wrapper">
-        <div class="mui--appbar-height"></div>
-</div>
-        
-<section id="single" class="mui-container-fluid">
-    
-<article class="event">
-   <h1></h1>
-   <p class="price">$ <span></span></p>
-   <img scr="" alt="">
-   <div class="content"></div>
-   
-   
-</article>
-    
-</section>
-        
-<footer id="footer">
-        
-<div class="mui-container-fluid">
-        <br>
-        Made with &hearts; by <a href="">zlatkarizova</a>
- </div>
- </footer>
-        
+
+
+   <!------------ MENU---------------------------->
+ <div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+<!--           <li><a class="pure-menu-heading" href="index.html">HOME</a></li>  home link maybe will change it-->
+
+        <a class="pure-menu-heading" href="#">Menu</a>  <!-- MAYBE WILL STAY LIKE THIS-->
+
+<!--changes come below this line-->
+
+
+            <ul class="pure-menu-list" id="tagmenu"> <!--change in this line: put in id-->
+                <li class="pure-menu-item"><a href="template.html" class="pure-menu-link" >Home</a></li>
+
+                <template id="linkTemplate">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">tags</a></li>
+                </template>
 
 
 
-        
-    
-    
 
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    
-    
-    
-    
-    
-    
-    <!-- JS external link -->
-    <script src="main.js"></script> 
-</body>
+            </ul>
+        </div>
+    </div>
 
+    <!-------------------------------------------------->
+
+
+   <div id="main">
+        <div class="header">
+           <h1> Huset Newsletter</h1>
+            <h2>Music Events</h2>
+             <a href="template.html"><div class="logo"></div></a>
+        </div>
+       <div class="test"></div>
+
+     <div class="content">
+
+    <section id="single">
+        <article class="post">
+            <h1></h1>    <!--title-->
+            <p class="price"><span></span></p>
+            <img src="" alt="">
+            <div class="postcontent"></div>
+
+
+         </article>
+    </section>
+
+
+
+           </div>
+       </div>
+    </div>
+
+
+<!--    js must be here-->
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
 </html>
